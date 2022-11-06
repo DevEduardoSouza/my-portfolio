@@ -723,9 +723,9 @@ textarea {
     .imgs img {
         width: 100%;
     }
-    /* .conteiner-banner button,.conteiner-banner h1 {
+    .conteiner-banner h1 {
        display: none;
-    } */
+    } 
     
 }
 
