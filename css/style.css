@@ -112,7 +112,7 @@ main{
     max-width: 1150px;
     height: 300px;
     margin: auto;
-    background-image: url('/img/night-ocean-landscape-full-moon-stars-shine_107791-7397.webp');
+    background-image: url('/img/pen-idea-bulb-paper.jpg');
     background-size: cover;
     background-position: center center;
     filter: brightness(100%);
@@ -269,11 +269,12 @@ ul{
 .conteiner-banner h1{
     font-size: 3.5rem;
     font-weight: 900;
+    text-shadow: 1px 4px 7px rgba(0, 0, 0, 0.632);
 }
 .conteiner-banner a{
     text-decoration: none;
 }
-.conteiner-banner button{
+/* .conteiner-banner button{
     background-color: #ffff00;
     border: none;
     padding: 10px;
@@ -287,7 +288,7 @@ ul{
 .conteiner-banner button:hover{
     background-color: #b6b600;
     transition: .6s;
-}
+} */
 .infos{
     /* border: 1px solid red; */
     display: flex;
@@ -721,9 +722,9 @@ textarea {
     .imgs img {
         width: 100%;
     }
-    .conteiner-banner button,.conteiner-banner h1 {
+    /* .conteiner-banner button,.conteiner-banner h1 {
        display: none;
-    }
+    } */
     
 }
 
