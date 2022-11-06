@@ -635,14 +635,14 @@ textarea {
 #hamburger{
     display: block;
     width: 20px;
-    border-top: 2px solid black;
+    border-top: 2px solid white;
 }
 #hamburger::after, #hamburger::before {
     content: '';
     display: block;
     width: 20px;
     height: 2px;
-    background:black;
+    background:white;
     margin-top: 5px;
     transition: .3s;
     position: relative;
@@ -651,7 +651,7 @@ textarea {
     border-top-color:transparent ;
     width: 100vw;
     height: 200vh;
-    background-color: rgba(0, 0, 0, 0.899);
+    background-color: white;
     opacity: 0.5;
     z-index: 2000;
 }
