@@ -379,6 +379,7 @@ ul{
     justify-content: space-between;
     max-width: 250px;
     width: 90%;
+    margin: auto;
 }
 .text-info{
     margin: 10px 0;
