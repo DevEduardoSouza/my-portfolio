@@ -311,11 +311,10 @@ ul{
 }
 .title{
     color: white;
-    margin-top: 30px;
     margin-bottom: 20px;
     font-weight: 600;
     font-size: 1.5rem;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .projetos{
     max-width: 1150px;
@@ -724,7 +723,7 @@ textarea {
         width: 100%;
     }
     .conteiner-banner h1 {
-       display: none;
+        font-size: 2.5rem;
     } 
     
 }
@@ -737,6 +736,9 @@ textarea {
     .educa {
         max-width: 619px;
     }
+    .conteiner-banner h1 {
+        font-size: 2.0rem;
+    } 
 }
 @media(max-width:570px){
     .projetos {
@@ -782,6 +784,9 @@ textarea {
         padding-left: 20px;
         color: white;
     }
+    .conteiner-banner h1 {
+        font-size: 1.3rem;
+    } 
     
 }
 
@@ -792,6 +797,9 @@ textarea {
     .box-contatos {
         width: 236px;
         height: 106px;
+    }
+    .banner {
+        height: 200px;
     }
         
 }
@@ -804,6 +812,9 @@ textarea {
     .infos-conteudo{
         border-bottom: 1px solid rgba(128, 128, 128, 0.055);
     }
+    .conteiner-banner h1 {
+        font-size: 1.2rem;
+    } 
 }
 @media(max-width:410px){
     .conteudo {
