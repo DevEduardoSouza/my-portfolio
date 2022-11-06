@@ -112,7 +112,7 @@ main{
     max-width: 1150px;
     height: 300px;
     margin: auto;
-    background-image: url('/img/pen-idea-bulb-paper.jpg');
+    background-image: url('../img/pen-idea-bulb-paper.jpg');
     background-size: cover;
     background-position: center center;
     filter: brightness(100%);
