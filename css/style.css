@@ -794,7 +794,7 @@ textarea {
         
 }
 @media(max-width:410px){
-    .infos {
+    .infos{
         max-width: 203px;
         border-bottom: 1px; 
         justify-content: center;
@@ -803,6 +803,24 @@ textarea {
         border-bottom: 1px solid rgba(128, 128, 128, 0.055);
     }
 }
+@media(max-width:410px){
+    .conteudo {
+        width: 200px;
+       
+    }
+    .perfil2, .social, .perfil{
+        width: 273px;
+    }
+    .conteiner-btn-text {
+        width: 100%;
+    }
+    .btns button {
+        width: 85px;
+        
+    }
+}
+
+
 
 
 
