@@ -307,12 +307,12 @@ ul{
     color: white;
     padding-left: 10px;
 }
-.h2-info, .contatos-ti, .entrar-c{
+.title{
     color: white;
     margin-top: 30px;
     margin-bottom: 20px;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 .projetos{
     max-width: 1150px;
@@ -330,7 +330,6 @@ ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px;
     box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.274);
     
 }
@@ -363,35 +362,40 @@ ul{
     -webkit-transform: scale(1.0);
     transform: scale(1.1);
 }
-.btns{
-    width: inherit;
-    justify-content: center;
-    display: flex;
-    margin: auto;
-}
+
 .btns button{
-    width: 80px;
+    width: 100px;
     height: 20px;
     /* border: 1px #20202A solid; */
     border: none;
     /* border: 1px solid #ffff00; */
-    margin-top: 10px;
     font-weight: 700;
+}
+.conteiner-btn-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 250px;
+    width: 90%;
+    border: 1px #20202A solid;
+}
+.text-info{
+    margin: 10px 0;
+    color: white;
+    border: 1px solid red;
 }
 .demo{
     background-color:#ffff00;
     font-size: 1.0rem;
     color: #20202A;
 }
+.demo:hover{
+    background-color:#c0c000;
+    transition: .5s;
+}
 .git{
     background-color:transparent;
     color: white;
-}
-.Recommendations h2{
-    margin-top: 40px;
-    color: white;
-    font-weight: 600;
-    font-size: 1.1rem;
 }
 .comen{
     width: inherit;
@@ -443,24 +447,16 @@ ul{
 
 .histo{
     border: 1px solid red;
-    padding: 48px 0;
     max-width: 900px;
     width: 90%;
     display: flex;
     gap: 30px;
-   
     margin: auto;
 }
 .educa{
     /* border: 1px solid red; */
     max-width: 450px;
     height: auto;
-}
-.educa h2, .titulo-c{
-    font-size: 1.3rem;
-    color: white;
-    font-weight: 700;
-    margin-bottom: 25px;
 }
 .box-educa{
     background-color: #2D2D39;
@@ -649,16 +645,17 @@ textarea {
     transition: .3s;
     position: relative;
 }
-#conteiner.active #hamburger{
+/* #conteiner.active #hamburger{
     border-top-color:transparent ;
     width: 100vw;
     height: 200vh;
     background-color: white;
     opacity: 0.5;
     z-index: 2000;
-}
+} */
 #conteiner.active #btn-mobile{
     padding: 0px;
+    background-color: #b6b600;
 }
 #conteiner.active #hamburger::before{
     transform: rotate(135deg);
@@ -677,7 +674,6 @@ textarea {
     background-color: #20202A;
     border-right: 1px solid rgba(128, 128, 128, 0.158);
     cursor: pointer;
-    color: rgb(130, 87, 230);
     /* gap: 0.5rem; */
     position: absolute;
     /* left: 0px; */
@@ -724,7 +720,7 @@ textarea {
 @media(max-width:875px){
     .imgs {
         width: 90%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
     .imgs img {
         width: 100%;
@@ -754,9 +750,8 @@ textarea {
         width: 90%;
         margin: auto;
     }
-    .Recommendations h2 {
-        margin-bottom:15px;
-       
+    .title{
+        margin-left: 17px;
     }
     .box-pj-c {
         max-width: 82%;
@@ -775,7 +770,19 @@ textarea {
         gap: 10px;
         margin-top: 15px;
         /* border-bottom: 1px; */
-        justify-content: center;
+        /* justify-content: center; */
+    }
+    form {
+        padding: 16px;
+        
+    }
+    .input-from input, textarea {
+        max-width: 149px;
+        width: 100%;
+        background: linear-gradient(159deg,#252532 0,#23232d 100%);
+        border: none;
+        padding-left: 20px;
+        color: white;
     }
     
 }
@@ -789,6 +796,16 @@ textarea {
         height: 106px;
     }
         
+}
+@media(max-width:410px){
+    .infos {
+        max-width: 203px;
+        border-bottom: 1px; 
+        justify-content: center;
+    }
+    .infos-conteudo{
+        border-bottom: 1px solid rgba(128, 128, 128, 0.055);
+    }
 }
 
 
