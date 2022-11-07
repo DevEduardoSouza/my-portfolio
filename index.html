@@ -305,19 +305,19 @@
                 <h2 class="title">Recomendações</h2>
                 <div class="comen">
                     <div class="box-c">
-                        <img class="img-perfil" src="img/foto-perfil.jpeg" alt="">
-                        <h3>Eduardo Souza</h3>
+                        <img class="img-perfil" src="img/avatar-mas.png" alt="">
+                        <h3>Marcos Silva</h3>
                         <span></span>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe quia dignissimos aperiam deserunt voluptatibus fuga! Unde expedita cupiditate molestiae incidunt similique veritatis sint adipisci odit dolorum? Expedita odit ad sit?</p>
+                        <p>Só tenho a agradecer pelo resultado e o bom atendimento, parte que eu não entendia você deixou bem explicado.</p>
                         <div class="conteiner-b">
                             <img class="img-a" src="img/5-estrela.png" alt="">
                         </div>
                     </div>
                     <div class="box-c">
-                        <img class="img-perfil" src="img/foto-perfil.jpeg" alt="">
-                        <h3>Eduardo Souza</h3>
+                        <img class="img-perfil" src="/img/avatar-fem.png" alt="">
+                        <h3>Camila Lopes</h3>
                         <span></span>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe quia dignissimos aperiam deserunt voluptatibus fuga! Unde expedita cupiditate molestiae incidunt similique veritatis sint adipisci odit dolorum? Expedita odit ad sit?</p>
+                        <p>Ótima landing page, responsiva , funcional e com bom custo benéfico. Agora tenho um site para mostra meu produto detalhado.</p>
                         <div class="conteiner-b">
                             <img class="img-a" src="img/5-estrela.png" alt="">
                         </div>
@@ -359,24 +359,23 @@
                         <h3>Desenvolver site de notícias</h3>
                         <span class="local">Front-End</span>
                         <br>
-                        <span class="data">setembro de 2021 a fervereiro 2022</span>
-                        <p>Layouts do Photoshop convertidos em páginas da Web usando HTML, CSS e JavaScript</p>
+                        <span class="data"> setembro de 2022 a dezembro 2022</span>
+                        <p> um site que você seja bem-informado sobre as novas tecnologias disponíveis em todo o mundo</p>
                     </div>
                     <div class="box-educa">
                         <h3>Dropshipping</h3>
                         <span class="local">Front-End</span>
                         <br>
-                        <span class="data">setembro de 2021 a fervereiro 2022</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolorum voluptate veritatis, cupiditate deleniti quidem sunt dolor eligendi iusto iste odio dolorem alias quis sequi quo ut porro magni eaque?</p>
+                        <span class="data">setembro de 2022 a dezembro 2022</span>
+                        <p> Desenvolvendo um modelo de negócios prático para quem não quer perder o sono pensando no frete ou na gestão do estoque. Com o dropshipping, os produtos são enviados diretamente do fornecedor para os clientes.</p>
                     </div>
                     <div class="box-educa">
-                        <h3>Responsividade</h3>
+                        <h3>Landing page</h3>
                         <span class="local">Front-End</span>
                         <br>
                         <span class="data">março de 2022</span>
-                        <p>1° semestre: Algoritimos em C</p>
-                        <p>2° semestre: Estrutura de dados em C</p>
-                        <p>3° semestre: Java & banco de dados</p>
+                        <p>As landing pages podem ser utilizadas para aumentar o alcance da sua marca e atrair clientes em potencial, obtendo informações para permanecer em contato com cada um deles. Para isso, basta incluir em sua landing page um formulário de cadastro.</p>
+                        
                     </div>
                 </div>
             </div>
@@ -490,24 +489,26 @@
 
             <h2 class="title">Entrar em contato</h2>
             <div class="conteiner-form">
-                <form action="#" method="post">
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <input type="hidden" name="accessKey" value="a48115d6-ad08-4414-be8f-8fb5f4d3c15d">
+                    <input type="hidden" name="redirectTo" value="https://eduardo074.github.io/portfolio/">
                     <div class="input-from">
                         <div class="img-von">
                             <img src="https://img.icons8.com/small/64/000000/user-male-circle.png" alt="">
                         </div>
-                        <input type="text" name="usuario" placeholder="Nome" required minlength="2">
+                        <input type="text" name="name" placeholder="Nome" required minlength="2">
                     </div>
                     <div class="input-from">
                         <div class="img-von">
                             <img src="https://img.icons8.com/small/64/000000/email.png" alt="">
                         </div>
-                        <input type="email" name="email" placeholder="E-mail" required>
+                        <input type="email" name="email" id="email" required>
                     </div>
                     <div class="input-from">
                         <div class="conteiner-img">
                             <img src="https://img.icons8.com/small/50/000000/send-mass-email.png" alt="">
                         </div>
-                        <textarea name="txt" id="txt" ></textarea>
+                        <textarea name="message" id="txt" ></textarea>
                     </div>
                     <button  id="btnConteiner">Enviar Mensagem</button>
                 </form>
