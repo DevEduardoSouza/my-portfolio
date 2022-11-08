@@ -7,31 +7,26 @@ html, body{
     height: 100vh;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
 main{
     max-width: 1300px;
     padding: 10px;
-    /* border: 1px solid rgb(47, 47, 77); */
     height: auto;
     margin: auto;
     display: flex;
-    /* justify-content: space-between; */
 }
-#conteiner{
+
+#conteiner {
     height: 100vh;
     background-color: #20202A;
     position: fixed;
-    /* left: 50px; */
-    /* width: 300px; */
-    /* border: 1px solid #ff0000; */
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     z-index: 100;
-    box-shadow: -5px 6px 15px 4px rgba(0, 0, 0, 0.288);
-    /* overflow-y: auto; */
+    box-shadow: -5px 6px 15px 4px rgb(0 0 0 / 29%);
     display: none;
-    margin-left: 48px;
     margin-top: -14px;
+    position: fixed;
+    left: 45px;
 }
 
 .perfil{
@@ -61,7 +56,6 @@ main{
     height: 1300px;
     width: 250px;
     margin: auto;
-    /* border: 1px solid red; */
 }
 ::-webkit-scrollbar {
     display: none;
@@ -74,9 +68,6 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* position: absolute;
-    bottom: 50%;
-    left: 0; */
     position: fixed;
     bottom: 0;
 }
@@ -97,16 +88,8 @@ main{
     margin: auto;
     max-width: 1150px;
     width: 90%;
-    /* margin-left: 350px; */
-    /* border: 1px solid red; */
    
 }
-/* .conteudo-banner{
-    max-width: 1900px;
-    width: 90%;
-    height: 350px;
-    background-color: blue;
-} */
 .banner{
     background-color: gray;
     max-width: 1150px;
@@ -116,7 +99,6 @@ main{
     background-size: cover;
     background-position: center center;
     filter: brightness(100%);
-     /* margin-left: 50px; */
 }
 
 .foto-perfil{
@@ -274,23 +256,7 @@ ul{
 .conteiner-banner a{
     text-decoration: none;
 }
-/* .conteiner-banner button{
-    background-color: #ffff00;
-    border: none;
-    padding: 10px;
-    text-transform: uppercase;
-    font-weight: 500;
-    display: block;
-    margin: auto;
-    margin-top: 40px;
-    cursor: pointer;
-}
-.conteiner-banner button:hover{
-    background-color: #b6b600;
-    transition: .6s;
-} */
 .infos{
-    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
@@ -367,9 +333,7 @@ ul{
 .btns button{
     width: 100px;
     height: 20px;
-    /* border: 1px #20202A solid; */
     border: none;
-    /* border: 1px solid #ffff00; */
     font-weight: 700;
 }
 .conteiner-btn-text{
@@ -641,14 +605,6 @@ textarea {
     transition: .3s;
     position: relative;
 }
-/* #conteiner.active #hamburger{
-    border-top-color:transparent ;
-    width: 100vw;
-    height: 200vh;
-    background-color: white;
-    opacity: 0.5;
-    z-index: 2000;
-} */
 #conteiner.active #btn-mobile{
     padding: 0px;
     background-color: #b6b600;
@@ -660,7 +616,7 @@ textarea {
     transform: rotate(-135deg);
     top: -7px;
 }
-#btn-mobile{
+#btn-mobile {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -670,12 +626,11 @@ textarea {
     background-color: #20202A;
     border-right: 1px solid rgba(128, 128, 128, 0.158);
     cursor: pointer;
-    /* gap: 0.5rem; */
     position: absolute;
-    /* left: 0px; */
     z-index: 1000;
     height: 100vh;
     position: fixed;
+    left: 0;
     margin-top: -14px;
 }
 #conteiner.active {
@@ -701,6 +656,9 @@ textarea {
         justify-content: center;
         width: 90%;
         margin: auto;
+    }
+    main{
+        margin-left: 50px;
     }
     
 }
@@ -786,6 +744,9 @@ textarea {
     .conteiner-banner h1 {
         font-size: 1.3rem;
     } 
+    .conteiner-banner{
+        height: auto;
+    }
     
 }
 
@@ -801,13 +762,14 @@ textarea {
         height: 200px;
     }
         
-}
-@media(max-width:410px){
     .infos{
         max-width: 203px;
         border-bottom: 1px; 
         justify-content: center;
     }
+}
+@media(max-width:410px){
+    
     .infos-conteudo{
         border-bottom: 1px solid rgba(128, 128, 128, 0.055);
     }
@@ -815,7 +777,7 @@ textarea {
         font-size: 1.2rem;
     } 
 }
-@media(max-width:410px){
+@media(max-width:320px){
     .conteudo {
         width: 200px;
        
@@ -829,6 +791,9 @@ textarea {
     .btns button {
         width: 85px;
         
+    }
+    .conteiner-info {
+        width: 100%;
     }
 }
 
