@@ -16,4 +16,9 @@ function toggleMenu(event){
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
 
+function loading() {
+    document.getElementsByClassName('box-pre')[0].style.display = "none";    
+    document.getElementsByClassName('content')[0].style.display = "block"; 
+}
+
 
