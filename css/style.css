@@ -53,7 +53,7 @@ main{
     color: white;
 }
 .conteudo{
-    height: 1300px;
+    height: 1450px;
     width: 250px;
     margin: auto;
 }
@@ -718,7 +718,7 @@ textarea {
         width: 100%;
     }
     .conteiner-info {
-        width: 79%;
+        width: 90%;
     }
     .infos {
         flex-wrap: wrap;
@@ -758,6 +758,9 @@ textarea {
         width: 236px;
         height: 106px;
     }
+    .box{
+        height: 180px;
+    }
     .banner {
         height: 200px;
     }
@@ -794,6 +797,9 @@ textarea {
     }
     .conteiner-info {
         width: 100%;
+    }
+    .local, .data, .box-educa p, .box-pj-c span {
+    font-size: .6rem;
     }
 }
 
