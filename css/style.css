@@ -643,6 +643,23 @@ textarea {
 #conteiner.active  #btn-mobile{
     right: -204px;
 }
+/*  */
+#btn_whats{
+    /* background-color: gray; */
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+#btn_whats a img{
+    width: 40px;
+    height: 40px;
+}
+#btn_whats a img:hover{
+    transform: scale(1.1);
+}
+
 
 @media(max-width:1300px){
     .box {
