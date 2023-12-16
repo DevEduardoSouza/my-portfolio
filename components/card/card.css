@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-card-bg: #2d2d39;
+  --color-font-main: #ffff;
+}
+
+/* CARD-CONTAINER */
+
+.card-container {
+  background-color: var(--color-card-bg);
+  color: var(--color-font-main);
+  max-width: 320px;
+  min-height: 400px;
+  width: 90%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
