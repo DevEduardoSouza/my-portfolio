@@ -12,6 +12,7 @@
   --color-font-main: #ffff;
   --color-element-preload: #46464b;
   --color-style: #6d00e7;
+  --color-bg-secundary: #24242f;
 }
 
 html,
@@ -26,16 +27,39 @@ body {
 }
 
 /* MAIN */
-
 main {
-  max-width: 1300px;
-  padding: 10px;
-  height: auto;
-  margin: auto;
-  display: flex;
 }
 
-#conteiner {
+/* CONTAINER PERSON DETAILS */
+.container-person-details {
+  display: flex;
+  position: fixed;
+  flex-direction: row-reverse;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+/* BUTTON TOGGLE */
+.container-person-details .btn-toggle {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  height: 100vh;
+  background-color: var(--color-bg-secundary);
+  border-left: 1px solid rgba(255, 255, 255, 0.057);
+  cursor: pointer;
+}
+
+.container-person-details .btn-toggle i {
+  font-size: 1.5rem;
+}
+
+/* PERSON DETAILS  */
+.container-person-details .person-details {
+}
+
+/* .person-details{
   height: 100vh;
   background-color: #20202a;
   position: fixed;
@@ -47,7 +71,7 @@ main {
   margin-top: -14px;
   position: fixed;
   left: 45px;
-}
+} */
 
 .perfil {
   background-color: #24242f;
@@ -62,7 +86,7 @@ main {
   width: 58px;
   height: 100%;
 }
-.conteiner-bnt-all {
+.btn-toggle {
   position: relative;
 }
 .perfil2 {
@@ -634,10 +658,6 @@ textarea {
   transition: 0.3s;
   position: relative;
 }
-#conteiner.active #btn-mobile {
-  padding: 0px;
-  background-color: #b6b600;
-}
 #conteiner.active #hamburger::before {
   transform: rotate(135deg);
 }
@@ -645,7 +665,7 @@ textarea {
   transform: rotate(-135deg);
   top: -7px;
 }
-#btn-mobile {
+/* #btn-mobile {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -661,16 +681,14 @@ textarea {
   position: fixed;
   left: 0;
   margin-top: -14px;
-}
+} */
 #conteiner.active {
   display: block;
 }
-#conteiner.active .conteiner-bnt-all {
+#conteiner.active .btn-toggle {
   display: none;
 }
-#conteiner.active #btn-mobile {
-  right: -204px;
-}
+
 /*  */
 #btn_whats {
   /* background-color: gray; */
