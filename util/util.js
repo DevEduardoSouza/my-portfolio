@@ -23,4 +23,7 @@ export const html = {
 
     return elementWithClasses;
   },
+  handleToggle: (element) => {
+    element.classList.toggle("hide");
+  },
 };
