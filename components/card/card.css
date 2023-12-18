@@ -18,10 +18,9 @@
 .card-container {
   background-color: var(--color-card-bg);
   color: var(--color-font-main);
-  max-width: 320px;
-  max-height: 480px;
-  width: 90%;
-  padding: 0.5rem;
+  width: 100%;
+  max-width: 350px;
+  padding: 0.9rem;
   border-radius: 0.25rem;
 
   display: flex;
@@ -29,7 +28,7 @@
   justify-content: space-between;
   font-family: var(--font-main);
   gap: 1rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: relative;
 }
 
 /* CARD-CATEGORY */
@@ -49,7 +48,6 @@
 /* CARD-IMGS */
 .card-imgs {
   width: 100%;
-  background-color: var(--color-element-preload);
 }
 .card-imgs img {
   width: 100%;
@@ -89,8 +87,8 @@
   margin-left: 0.5rem;
 }
 .stack-view-more .btn-view-more {
-  color: var(--color-font-main);
+  color: var(--color-font-main) !important;
 }
 .stack-view-more .btn-view-more:hover {
-  color: var(--color-style);
+  color: var(--color-style) !important;
 }

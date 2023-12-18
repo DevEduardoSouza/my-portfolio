@@ -1,34 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- BOOTSTRAP -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
 
-  <title>Document</title>
-</head>
-<body>
+    <!-- DEVICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
 
-  <div class="card-container">
-    <div class="card-category"></div>
-    <div class="card-imgs">
-      <div class="carousel">
-        <i class="bi bi-arrow-left-circle"></i>
-        <img src="" alt="">
-        <i class="bi bi-arrow-left-circle"></i>
+    <!-- CSS -->
+
+    <!-- CSS CARD -->
+    <link rel="stylesheet" href="./card.css" />
+
+    <title>CARD - TESTE</title>
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="card-category">front-end</div>
+      <div class="card-imgs">
+        <div class="carousel">
+          <!-- <i class="bi bi-arrow-left-circle"></i> -->
+          <img
+            class="img-carousel"
+            src="https://www.pixground.com/wp-content/uploads/2023/05/Windows-11-Abstract-Bloom-4K-Wallpaper-1024x576.png.webp"
+            alt="img projeto"
+          />
+          <!-- <i class="bi bi-arrow-left-circle"></i> -->
+        </div>
+      </div>
+      <div class="card-details">
+        <div class="card-title"><h3>Projeto</h3></div>
+        <div class="card-description">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+            ex adipisci, perferendis neque animi laboriosam? Unde mollitia
+            natus, quis soluta, rerum commodi voluptatibus consectetur
+            explicabo, veniam aut odit voluptate cumque. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Corrupti, quidem vel? Dicta quo
+            corrupti nostrum sequi tempora sint repudiandae quibusdam impedit
+            voluptatum, sunt fugiat explicabo. Delectus, facere esse!
+            Consectetur, magni!
+          </p>
+        </div>
+        <div class="stack-view-more">
+          <div class="stack-container">
+            <i title="HTML" class="devicon-html5-plain colored"></i>
+            <i title="CSS" class="devicon-css3-plain colored"></i>
+            <i title="JavaScript" class="devicon-javascript-plain colored"></i>
+          </div>
+          <button class="btn btn-view-more">Ver mais ></button>
+        </div>
       </div>
     </div>
-    <div class="card-details">
-      <div class="card-title"></div>
-      <div class="card-description"></div>
-      <div class="stack-view-more">
-        <div class="stack-container"></div>
-        <button class="btn btn-view-more"></button>
-      </div>
-    </div>
-  </div>
-  
-  <script type="module" src="./teste.js"></script>
-</body>
+
+    <script type="module" src="./card.js"></script>
+    <!-- <script type="module" src="../../util/util.js"></script> -->
+  </body>
 </html>
