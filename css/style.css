@@ -42,6 +42,7 @@ a {
 button {
   border: none;
   cursor: pointer;
+  background: none;
 }
 
 .hide {
@@ -254,7 +255,6 @@ button {
   margin-top: 5px;
   margin-left: 10px;
   object-fit: cover;
-    
 }
 
 .about-me-container .about-me-content {
@@ -264,7 +264,8 @@ button {
   padding: 2rem;
   display: flex;
   gap: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 15px 15px, rgba(0, 0, 0, 0.095) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 15px 15px,
+    rgba(0, 0, 0, 0.095) 0px 15px 12px;
 }
 
 .about-me-content .description {
@@ -283,7 +284,6 @@ button {
   color: var(--color-font-main);
   font-size: 1rem;
   font-weight: bold;
-  
 }
 .about-me-content .description button:hover {
   background-color: #5c0db6;
@@ -294,14 +294,14 @@ button {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: .8rem;
+  gap: 0.8rem;
 }
 
-.main-skills .skill > div{
+.main-skills .skill > div {
   display: flex;
   justify-content: space-between;
-  margin-bottom: .5rem;
-  font-size: .9rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .main-skills .skill .bar {
@@ -316,63 +316,64 @@ button {
 }
 
 .skill-front-end .progress-bar,
-.skill-back-end  .progress-bar{
+.skill-back-end .progress-bar {
   background-color: var(--color-style);
 }
 
 .main-skills .skill-front-end .progress-bar {
   width: 80%;
 }
-.main-skills .skill-back-end  .progress-bar{
+.main-skills .skill-back-end .progress-bar {
   width: 50%;
 }
-
 
 /* statistics  */
 .container-portfolio .person-statistics {
   display: flex;
   justify-content: space-between;
-  
+
   margin: 5rem 0;
 }
-.container-portfolio .person-statistics div{
+.container-portfolio .person-statistics div {
   display: flex;
   /* align-items: center; */
-  gap: .5rem;
+  gap: 0.5rem;
 }
-.container-portfolio .person-statistics div div{
+.container-portfolio .person-statistics div div {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  gap: .25rem;
+  gap: 0.25rem;
 }
-.person-statistics div i{
+.person-statistics div i {
   font-size: 2.5rem;
   color: var(--color-font-secundary);
 }
-.person-statistics .number{
+.person-statistics .number {
   font-size: 2rem;
   font-weight: bolder;
 }
-.person-statistics div span:last-child{
-  font-size: .9rem;
-}
-.infos-conteudo {
-  display: flex;
-  align-items: center;
-}
-.infos-conteudo .number {
-  color: #ffff00;
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-.infos-conteudo span {
-  font-size: 0.8rem;
-  color: white;
-  padding-left: 10px;
+.person-statistics div span:last-child {
+  font-size: 0.9rem;
 }
 
+/* Projects */
+.projects-container .projects-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 2rem;
+}
 
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .projects-container .projects-content {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .card-container {
+    max-width: 100%;
+  }
+}
 
 .title {
   color: white;
