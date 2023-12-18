@@ -270,7 +270,7 @@ button {
 .about-me-content .description {
   flex: 1;
   color: var(--color-font-main);
-  line-height: 1.5rem;
+  line-height: 1.7rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -311,7 +311,7 @@ button {
 }
 
 .main-skills .progress-bar {
-  height: 15px;
+  height: 10px;
   border-radius: 30px;
 }
 
@@ -328,16 +328,34 @@ button {
 }
 
 
-
-
-
-
-
-
-.infos {
+/* statistics  */
+.container-portfolio .person-statistics {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
+  
+  margin: 5rem 0;
+}
+.container-portfolio .person-statistics div{
+  display: flex;
+  /* align-items: center; */
+  gap: .5rem;
+}
+.container-portfolio .person-statistics div div{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: .25rem;
+}
+.person-statistics div i{
+  font-size: 2.5rem;
+  color: var(--color-font-secundary);
+}
+.person-statistics .number{
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.person-statistics div span:last-child{
+  font-size: .9rem;
 }
 .infos-conteudo {
   display: flex;
@@ -353,6 +371,9 @@ button {
   color: white;
   padding-left: 10px;
 }
+
+
+
 .title {
   color: white;
   margin-bottom: 20px;
