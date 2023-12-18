@@ -39,6 +39,10 @@ a {
   text-decoration: none;
   color: var(--color-font-main);
 }
+button {
+  border: none;
+  cursor: pointer;
+}
 
 .hide {
   display: none;
@@ -81,7 +85,9 @@ a {
 }
 
 .person-details .content-person .profile {
-  background-color: var(--color-bg-secundary);
+  background-color: var(--color-bg-third);
+  margin-top: -20px;
+  padding: 1rem 0;
 }
 
 /* profile */
@@ -212,88 +218,122 @@ a {
   color: var(--color-style);
 }
 
-.retan {
-  background-color: red;
-  width: 58px;
-  height: 100%;
-}
-.btn-toggle {
-  position: relative;
-}
-.conteudo {
-  height: 1450px;
-  width: 250px;
-  margin: auto;
-}
-::-webkit-scrollbar {
-  display: none;
-}
-
-.conteiner-info {
+/* CONTAINER PORTFOLIO */
+.container-portfolio {
   background-color: #1e1e28;
-  height: auto;
+  width: 1200px;
+  max-width: 100%;
   margin: auto;
-  max-width: 1150px;
-  width: 90%;
-}
-.banner {
-  background-color: gray;
-  max-width: 1150px;
-  height: 300px;
-  margin: auto;
-  background-image: url("../img/banner.jpg");
-  background-size: cover;
-  background-position: center center;
-  filter: brightness(100%);
+  /* margin-left: 45px; */
+  border: 1px solid red;
+  padding: 2rem;
 }
 
-.res {
-  color: gray;
+/* CONTAINER PORTFOLIO > about-me-container*/
+
+.container-portfolio .about-me-container {
+  display: flex;
+  gap: 7rem;
 }
 
-.cricle {
-  background-color: #24242f;
+.container-portfolio .about-me-container .img-person {
+  background-color: rebeccapurple;
+  width: 180px;
+  height: 180px;
+
+  border-radius: 200px 162px 200px 154px;
+  -moz-border-radius: 200px 162px 200px 154px;
+  -webkit-border-radius: 200px 162px 200px 154px;
+  border: 0px solid #000000;
+}
+
+.container-portfolio .about-me-container .img-person img {
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  border: 4px solid yellow;
+  margin-top: 5px;
+  margin-left: 10px;
+  object-fit: cover;
+    
 }
-.cricle span {
-  display: block;
-  margin-top: 18px;
-  margin-left: 8px;
-  font-size: 0.9rem;
-}
-.conteinr p {
-  margin-left: -12px;
-  margin-top: 6px;
-}
-.in {
-  padding-left: 18px;
-}
-.es {
-  padding-left: 10px;
-}
-/* .lin{
-    border: 1px solid red;
-} */
 
-.conteiner-banner {
+.about-me-container .about-me-content {
+  width: 100%;
+  background-color: var(--color-bg-third);
+  border-radius: 2rem;
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 15px 15px, rgba(0, 0, 0, 0.095) 0px 15px 12px;
+}
+
+.about-me-content .description {
+  flex: 1;
+  color: var(--color-font-main);
+  line-height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.about-me-content .description button {
+  width: 180px;
+  height: 45px;
+  border-radius: 2rem;
+  background-color: var(--color-style);
+  color: var(--color-font-main);
+  font-size: 1rem;
+  font-weight: bold;
+  
+}
+.about-me-content .description button:hover {
+  background-color: #5c0db6;
+  transition: 0.8s;
+}
+
+.about-me-content .main-skills {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.main-skills .skill > div{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+  font-size: .9rem;
+}
+
+.main-skills .skill .bar {
+  width: 100%;
+  background-color: var(--color-bg-secundary);
+  border-radius: 30px;
+}
+
+.main-skills .progress-bar {
+  height: 15px;
+  border-radius: 30px;
+}
+
+.skill-front-end .progress-bar,
+.skill-back-end  .progress-bar{
+  background-color: var(--color-style);
+}
+
+.main-skills .skill-front-end .progress-bar {
   width: 80%;
-  height: 250px;
-  margin: auto;
-  z-index: 1000;
-  color: white;
-  padding-top: 100px;
 }
-.conteiner-banner h1 {
-  font-size: 3.5rem;
-  font-weight: 900;
-  text-shadow: 1px 4px 7px rgba(0, 0, 0, 0.632);
+.main-skills .skill-back-end  .progress-bar{
+  width: 50%;
 }
-.conteiner-banner a {
-  text-decoration: none;
-}
+
+
+
+
+
+
+
+
 .infos {
   display: flex;
   justify-content: space-between;
