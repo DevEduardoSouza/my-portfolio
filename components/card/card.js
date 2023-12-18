@@ -41,7 +41,7 @@ export function card(props) {
     "div",
     "stack-container"
   );
-  props.stacks.forEach((element) => {
+  props.languages.forEach((element) => {
     stackContainer.innerHTML += `<i title="${element}" class="devicon-${element}-plain colored"></i>`;
   });
   stackViewMore.appendChild(stackContainer);
