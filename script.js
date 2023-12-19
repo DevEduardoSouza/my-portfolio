@@ -36,17 +36,17 @@ function fillProfile(data) {
 fillProfile(data);
 
 // fillProjects
-function fillProjects(data) {
+function fillProjects(projects) {
   const containerProjects = html.get(".projects-content");
+  containerProjects.innerHTML = "";
 
-  data.projects.forEach((project) => {
-    console.log(project);
+  projects.forEach((project) => {
     const newCard = card(project);
 
     containerProjects.appendChild(newCard);
   });
 }
-fillProjects(data);
+fillProjects(data.projects);
 
 // fillStatistics
 function fillStatistics(data) {
@@ -66,12 +66,63 @@ function fillStatistics(data) {
 }
 fillStatistics(data);
 
+// filterProjects
+function filterProjects(data) {
+  const filters = html.getAll(".filter");
 
-// Example filter
+  filters.forEach((filter) => {
+    filter.addEventListener("change", (e) => {
+      const value = e.target.value;
+      const valueClass = e.target.parentNode.getAttribute("class");
+      const development = html.get("#development");
+      const technologies = html.get("#technologies");
+      let projectsFilter;
 
-// const ages = [32, 33, 16, 40];
-// const result = ages.filter(checkAdult);
+      // Lógica para limitar a busca a um só select
+      if (valueClass.includes("technologies")) {
+        projectsFilter = filterProjectsByProperty(
+          data.projects,
+          value,
+          "languages"
+        );
+        development.value = "init";
+      } else {
+        projectsFilter = filterProjectsByProperty(
+          data.projects,
+          value,
+          "category"
+        );
+        technologies.value = "init";
+      }
 
-// function checkAdult(age) {
-//   return age >= 18;
-// }
+
+      if (value === "init") {
+        fillProjects(data.projects);
+        return;
+      }
+
+
+      function filterProjectsByProperty(projects, value, property) {
+        return projects.filter(function (project) {
+          const propertyValue = project[property];
+          return propertyValue.includes(value.toLocaleLowerCase());
+        });
+      }
+      fillProjects(projectsFilter);
+
+      
+      if (projectsFilter.length === 0) {
+        const projectsContent = html.get(".projects-content");
+
+        const message = {
+          text: `Ainda não estou envolvido em projetos que utilizem ${value}`,
+          icon: `<i class="bi bi-chat-square"></i>`,
+        };
+
+        projectsContent.appendChild(html.message(message));
+        return;
+      }
+    });
+  });
+}
+filterProjects(data);

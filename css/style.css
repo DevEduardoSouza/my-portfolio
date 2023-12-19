@@ -49,6 +49,9 @@ select {
   border: none;
   outline: none;
 }
+select {
+  cursor: pointer;
+}
 
 .hide {
   display: none;
@@ -391,7 +394,7 @@ select {
   align-items: center;
   gap: 0.5rem;
 }
-.projects-container .filter-projects form input{
+.projects-container .filter-projects form input {
   color: var(--color-font-secundary);
 }
 .projects-container .filter-projects form option {
