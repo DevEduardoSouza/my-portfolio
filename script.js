@@ -50,10 +50,10 @@ fillProjects(data);
 
 // fillStatistics
 function fillStatistics(data) {
-  const container = html.get(".person-statistics");
+  const containerStatistics = html.get(".person-statistics");
 
   data.statistics.forEach((statistic) => {
-    container.innerHTML += `
+    containerStatistics.innerHTML += `
       <div>
           <i class="${statistic.icon}"></i>
           <div>
@@ -65,3 +65,13 @@ function fillStatistics(data) {
   });
 }
 fillStatistics(data);
+
+
+// Example filter
+
+// const ages = [32, 33, 16, 40];
+// const result = ages.filter(checkAdult);
+
+// function checkAdult(age) {
+//   return age >= 18;
+// }

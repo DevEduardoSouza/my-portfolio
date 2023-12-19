@@ -44,6 +44,11 @@ button {
   cursor: pointer;
   background: none;
 }
+input,
+select {
+  border: none;
+  outline: none;
+}
 
 .hide {
   display: none;
@@ -364,6 +369,35 @@ button {
   grid-gap: 2rem;
 }
 
+.projects-container .filter-projects {
+  margin-bottom: 3rem;
+}
+.projects-container .filter-projects form {
+  display: flex;
+  gap: 1rem;
+}
+.projects-container .filter-projects form label {
+  border-radius: 0.25rem;
+  padding: 0.55rem;
+  background-color: var(--color-font-main);
+  color: var(--color-bg-third);
+}
+.projects-container .filter-projects form select {
+  color: var(--color-bg-third);
+  font-family: var(--font-main);
+}
+.projects-container .filter-projects form .l-search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.projects-container .filter-projects form input{
+  color: var(--color-font-secundary);
+}
+.projects-container .filter-projects form option {
+  font-size: 0.9rem;
+}
+
 /* Responsividade */
 @media screen and (max-width: 768px) {
   .projects-container .projects-content {
@@ -638,10 +672,10 @@ button {
   height: auto;
   margin: auto;
 }
-form {
+/* form {
   padding: 60px;
   margin: auto;
-}
+} */
 .img-von {
   width: 50px;
   height: 50px;
