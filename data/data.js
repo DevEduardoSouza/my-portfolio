@@ -58,7 +58,8 @@ export const data = {
     },
     {
       title: "E-commerce Website",
-      description: "A fully responsive e-commerce website with product listings, shopping cart, and checkout functionality.",
+      description:
+        "A fully responsive e-commerce website with product listings, shopping cart, and checkout functionality.",
       languages: ["html5", "css3", "javascript", "react", "nodejs", "mongodb"],
       category: "full-stack",
       imgs: [
@@ -75,7 +76,8 @@ export const data = {
     },
     {
       title: "Weather App",
-      description: "A weather application that fetches real-time weather data based on user input and displays it in a user-friendly interface.",
+      description:
+        "A weather application that fetches real-time weather data based on user input and displays it in a user-friendly interface.",
       languages: ["html5", "css3", "javascript", "react"],
       category: "front-end",
       imgs: [
@@ -90,5 +92,11 @@ export const data = {
         },
       ],
     },
+  ],
+  statistics: [
+    { name: "Projetos Concluídos", value: 29, icon: "bi bi-trophy" },
+    { name: "Projetos em andamento", value: 11, icon: "bi bi-arrow-clockwise" },
+    { name: "Tecnologias Aprendidas", value: 10, icon: "bi bi-book" },
+    { name: "Freelances feitos", value: 2, icon: "bi bi-check2-circle" },
   ],
 };

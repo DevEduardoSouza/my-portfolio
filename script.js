@@ -47,3 +47,21 @@ function fillProjects(data) {
   });
 }
 fillProjects(data);
+
+// fillStatistics
+function fillStatistics(data) {
+  const container = html.get(".person-statistics");
+
+  data.statistics.forEach((statistic) => {
+    container.innerHTML += `
+      <div>
+          <i class="${statistic.icon}"></i>
+          <div>
+            <span class="number">${statistic.value}</span>
+            <span>${statistic.name}</span>
+          </div>
+        </div>
+    `;
+  });
+}
+fillStatistics(data);
