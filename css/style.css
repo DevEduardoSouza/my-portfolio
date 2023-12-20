@@ -91,6 +91,8 @@ select {
 
 .person-details .content-person {
   position: relative;
+  height: 900px;
+  overflow-y: auto;
 }
 
 .person-details .content-person .profile {
@@ -138,12 +140,14 @@ select {
 /* skills */
 .content-person .skills {
   background-color: var(--color-bg-secundary);
-  height: 900px;
-  overflow-y: auto;
+  height: 1200px;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 .content-person .skills .person-data {
   display: flex;
