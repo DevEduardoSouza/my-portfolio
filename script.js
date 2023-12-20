@@ -69,13 +69,15 @@ fillStatistics(data);
 // filterProjects
 function filterProjects(data) {
   const filters = html.getAll(".filter");
+  const development = html.get("#development");
+  const technologies = html.get("#technologies");
+  const btnResetFilters = html.get(".btn-reset-filters button");
 
   filters.forEach((filter) => {
     filter.addEventListener("change", (e) => {
       const value = e.target.value;
       const valueClass = e.target.parentNode.getAttribute("class");
-      const development = html.get("#development");
-      const technologies = html.get("#technologies");
+
       let projectsFilter;
 
       // Lógica para limitar a busca a um só select
@@ -95,12 +97,10 @@ function filterProjects(data) {
         technologies.value = "init";
       }
 
-
       if (value === "init") {
         fillProjects(data.projects);
         return;
       }
-
 
       function filterProjectsByProperty(projects, value, property) {
         return projects.filter(function (project) {
@@ -110,7 +110,6 @@ function filterProjects(data) {
       }
       fillProjects(projectsFilter);
 
-      
       if (projectsFilter.length === 0) {
         const projectsContent = html.get(".projects-content");
 
@@ -123,6 +122,21 @@ function filterProjects(data) {
         return;
       }
     });
+  });
+
+  btnResetFilters.addEventListener("click", (e) => {
+    e.preventDefault();
+    //Classe para iniciar a animação
+    btnResetFilters.classList.add("rotate-spin");
+
+    technologies.value = "init";
+    development.value = "init";
+    fillProjects(data.projects);
+
+    // Remove a classe após um pequeno atraso
+    setTimeout(() => {
+      btnResetFilters.classList.remove("rotate-spin");
+    }, 300);
   });
 }
 filterProjects(data);

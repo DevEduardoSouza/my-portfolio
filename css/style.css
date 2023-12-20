@@ -377,6 +377,7 @@ select {
 }
 .projects-container .filter-projects form {
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 .projects-container .filter-projects form label {
@@ -399,6 +400,31 @@ select {
 }
 .projects-container .filter-projects form option {
   font-size: 0.9rem;
+}
+
+/* .projects-container .filter-projects form button {
+  animation:rotateSpin 4s linear;
+} */
+
+.projects-container .filter-projects form button i {
+  color: var(--color-font-main);
+  /* cursor: pointer; */
+  font-size: 1.5rem;
+}
+
+
+/* Animações */
+@keyframes rotateSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-spin {
+  animation: rotateSpin .3s linear;
 }
 
 /* Responsividade */
