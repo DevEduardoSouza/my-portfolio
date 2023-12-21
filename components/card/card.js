@@ -22,6 +22,7 @@ export function card(props) {
 
   // Card Details
   const cardDetails = html.createElementWithClasses("div", "card-details");
+  const cardContent = html.createElementWithClasses("div", "card-content");
 
   const cardTitle = html.createElementWithClasses("div", "card-title");
   cardTitle.innerHTML = `<h3>${props.title}</h3>`;
@@ -32,10 +33,10 @@ export function card(props) {
   );
   cardDescription.innerHTML = `<p>${props.description}</p>`;
 
-  const stackViewMore = html.createElementWithClasses(
-    "div",
-    "stack-view-more"
-  );
+  cardContent.appendChild(cardTitle);
+  cardContent.appendChild(cardDescription);
+
+  const stackViewMore = html.createElementWithClasses("div", "stack-view-more");
 
   const stackContainer = html.createElementWithClasses(
     "div",
@@ -46,16 +47,31 @@ export function card(props) {
   });
   stackViewMore.appendChild(stackContainer);
 
-  const btnViewMore = html.createElementWithClasses(
+  // Btns
+  console.log(props.links.github);
+  const containerBtns = html.createElementWithClasses("div", "btns-container");
+  const btnLinkGit = html.createElementWithClasses(
     "button",
     "btn",
     "btn-view-more"
   );
-  btnViewMore.textContent = "Ver mais >";
-  stackViewMore.appendChild(btnViewMore);
+  btnLinkGit.innerHTML = `<a href="${props.links.github}" target="_blank" >GitHub</a>`;
+
+  const btnLinkDeploy = html.createElementWithClasses(
+    "button",
+    "btn",
+    "btn-view-more"
+  );
+  btnLinkDeploy.innerHTML = `<a href="${props.links.deploy}" target="_blank" >Site</a>`;
+
+  [btnLinkGit, btnLinkDeploy].forEach((element) => {
+    containerBtns.appendChild(element);
+  });
+
+  stackViewMore.appendChild(containerBtns);
 
   // appendChild elements
-  [cardTitle, cardDescription, stackViewMore].forEach((elements) => {
+  [cardContent, stackViewMore].forEach((elements) => {
     cardDetails.appendChild(elements);
   });
 
