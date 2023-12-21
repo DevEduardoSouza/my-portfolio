@@ -431,6 +431,20 @@ select {
   animation: rotateSpin .3s linear;
 }
 
+@keyframes entryAnimation {
+  from {
+    transform: translateY(-5%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.entry {
+  animation: entryAnimation 0.8s ease-in-out; /* Duração: 1 segundo, animação suave */
+  animation-fill-mode: forwards; /* Mantém o elemento no estado final após a animação */
+}
+
 /* Responsividade */
 @media screen and (max-width: 768px) {
   .projects-container .projects-content {

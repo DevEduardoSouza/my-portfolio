@@ -9,6 +9,16 @@ btnTogglePersonDetails.addEventListener("click", () => {
   html.handleToggle(personDetails);
 });
 
+
+const PageEffects = {
+  applyEntryAnimation: (classElement, animationClass) => {
+    const elements = html.getAll(classElement);
+    elements.forEach((element) => {
+      element.classList.add(animationClass);
+    });
+  },
+};
+
 // fillProfile
 function fillProfile(data) {
   const name = (html.get(".name").innerHTML = data.name);
@@ -45,6 +55,7 @@ function fillProjects(projects) {
 
     containerProjects.appendChild(newCard);
   });
+  PageEffects.applyEntryAnimation(".card-container", "entry");
 }
 fillProjects(data.projects);
 
