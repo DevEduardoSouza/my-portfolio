@@ -16,7 +16,7 @@ export const html = {
   createElementWithClasses(element, ...classes) {
     if (!element) return null;
 
-    const elementWithClasses = document.createElement(element);
+    const elementWithClasses = html.create(element);
     if (classes.length > 0) {
       elementWithClasses.classList.add(...classes);
     }
