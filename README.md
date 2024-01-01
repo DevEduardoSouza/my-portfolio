@@ -2,8 +2,8 @@
 
 Este repositório contém um projeto de um portfólio simples desenvolvido utilizando HTML, CSS e JavaScript. O objetivo deste projeto é criar uma página web onde você poderá exibir e destacar seus projetos e trabalhos realizados.
 
-![Imagem do site](img/img_projeto.png)
-- Link do site : <a href="https://tech-fala-news.netlify.app">Link</a>
+![Imagem do site](img/img_prdojeto.png)
+- Link do site : <a href="https://eduardosouza.netlify.app">Link</a>
 
 ## Funcionalidades
 
